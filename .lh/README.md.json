@@ -1,0 +1,58 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1731339302476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731339314869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n # GPT2_Chatbot\r\n \r\n A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n+\r\n+A project to build a\r\n"
+                },
+                {
+                    "date": 1731339320867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n # GPT2_Chatbot\r\n \r\n A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n \r\n-A project to build a\r\n+A project to use RAG\r\n"
+                },
+                {
+                    "date": 1731339326263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n # GPT2_Chatbot\r\n \r\n A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n \r\n-A project to use RAG\r\n+A project to use RAG approach to finetune a\r\n"
+                },
+                {
+                    "date": 1731339332519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n # GPT2_Chatbot\r\n \r\n A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n \r\n-A project to use RAG approach to finetune a\r\n+A project to use RAG approach to finetune a openAI model and\r\n"
+                },
+                {
+                    "date": 1731339338176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n # GPT2_Chatbot\r\n \r\n A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n \r\n-A project to use RAG approach to finetune a openAI model and\r\n+A project to use RAG approach to finetune a openAI model and createa chatbot using chroma\r\n"
+                },
+                {
+                    "date": 1731339347451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n # GPT2_Chatbot\r\n \r\n A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n \r\n-A project to use RAG approach to finetune a openAI model and createa chatbot using chroma\r\n+A project to use RAG approach to finetune a openAI model and createa chatbot using chromadb\r\n"
+                },
+                {
+                    "date": 1731339352719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+# GPT2_Chatbot\r\n+\r\n+A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n+\r\n+A project to use RAG approach to finetune a openAI model and createa chatbot and use chromadb for storing\r\n"
+                },
+                {
+                    "date": 1731339360177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,5 @@\n # GPT2_Chatbot\r\n \r\n-A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n+A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.-> \r\n \r\n-A project to use RAG approach to finetune a openAI model and createa chatbot and use chromadb for storing\r\n-# GPT2_Chatbot\r\n-\r\n-A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n-\r\n-A project to use RAG approach to finetune a openAI model and createa chatbot using chromadb\r\n+A project to use RAG approach to finetune a openAI model and createa chatbot and use chromadb for storing word embedding vectors.\r\n"
+                },
+                {
+                    "date": 1731339368705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n # GPT2_Chatbot\r\n \r\n-A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.-> \r\n \r\n A project to use RAG approach to finetune a openAI model and createa chatbot and use chromadb for storing word embedding vectors.\r\n+\r\n+A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.-> plan canceled.\r\n"
+                },
+                {
+                    "date": 1731339376199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \r\n \r\n A project to use RAG approach to finetune a openAI model and createa chatbot and use chromadb for storing word embedding vectors.\r\n \r\n-A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.-> plan canceled.\r\n+[archived] A project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.-> plan canceled.\r\n"
+                }
+            ],
+            "date": 1731339302476,
+            "name": "Commit-0",
+            "content": "# GPT2_Chatbot\r\n\r\nA project to finetune gpt2 model from hf to make it act as a chatbot using a small chat data.\r\n"
+        }
+    ]
+}

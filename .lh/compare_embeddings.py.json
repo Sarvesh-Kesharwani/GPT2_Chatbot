@@ -1,0 +1,18 @@
+{
+    "sourceFile": "compare_embeddings.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1731340165512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1731340165512,
+            "name": "Commit-0",
+            "content": "from langchain_openai import OpenAIEmbeddings\r\nfrom langchain.evaluation import load_evaluator\r\nfrom dotenv import load_dotenv\r\nimport openai\r\nimport os\r\n\r\n# Load environment variables. Assumes that project contains .env file with API keys\r\nload_dotenv()\r\n#---- Set OpenAI API key \r\n# Change environment variable name from \"OPENAI_API_KEY\" to the name given in \r\n# your .env file.\r\nopenai.api_key = os.environ['OPENAI_API_KEY']\r\n\r\ndef main():\r\n    # Get embedding for a word.\r\n    embedding_function = OpenAIEmbeddings()\r\n    vector = embedding_function.embed_query(\"apple\")\r\n    print(f\"Vector for 'apple': {vector}\")\r\n    print(f\"Vector length: {len(vector)}\")\r\n\r\n    # Compare vector of two words\r\n    evaluator = load_evaluator(\"pairwise_embedding_distance\")\r\n    words = (\"apple\", \"iphone\")\r\n    x = evaluator.evaluate_string_pairs(prediction=words[0], prediction_b=words[1])\r\n    print(f\"Comparing ({words[0]}, {words[1]}): {x}\")\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    main()"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "query_data.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1731340194164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1731340194164,
+            "name": "Commit-0",
+            "content": "import argparse\r\n# from dataclasses import dataclass\r\nfrom langchain_community.vectorstores import Chroma\r\nfrom langchain_openai import OpenAIEmbeddings\r\nfrom langchain_openai import ChatOpenAI\r\nfrom langchain.prompts import ChatPromptTemplate\r\n\r\nCHROMA_PATH = \"chroma\"\r\n\r\nPROMPT_TEMPLATE = \"\"\"\r\nAnswer the question based only on the following context:\r\n\r\n{context}\r\n\r\n---\r\n\r\nAnswer the question based on the above context: {question}\r\n\"\"\"\r\n\r\n\r\ndef main():\r\n    # Create CLI.\r\n    parser = argparse.ArgumentParser()\r\n    parser.add_argument(\"query_text\", type=str, help=\"The query text.\")\r\n    args = parser.parse_args()\r\n    query_text = args.query_text\r\n\r\n    # Prepare the DB.\r\n    embedding_function = OpenAIEmbeddings()\r\n    db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)\r\n\r\n    # Search the DB.\r\n    results = db.similarity_search_with_relevance_scores(query_text, k=3)\r\n    if len(results) == 0 or results[0][1] < 0.7:\r\n        print(f\"Unable to find matching results.\")\r\n        return\r\n\r\n    context_text = \"\\n\\n---\\n\\n\".join([doc.page_content for doc, _score in results])\r\n    prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)\r\n    prompt = prompt_template.format(context=context_text, question=query_text)\r\n    print(prompt)\r\n\r\n    model = ChatOpenAI()\r\n    response_text = model.predict(prompt)\r\n\r\n    sources = [doc.metadata.get(\"source\", None) for doc, _score in results]\r\n    formatted_response = f\"Response: {response_text}\\nSources: {sources}\"\r\n    print(formatted_response)\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    main()"
+        }
+    ]
+}

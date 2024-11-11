@@ -1,0 +1,26 @@
+{
+    "sourceFile": "requirements.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1731339281785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731340330941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,13 @@\n chromadb==0.5.0 # Vector storage\r\n openai==1.31.1 # For embeddings\r\n tiktoken==0.7.0  # For embeddings \r\n \r\n-# install markdown depenendies with: `pip install \"unstructured[md]\"` after install the requirements file. Leave this line commented out. \n\\ No newline at end of file\n+# install markdown depenendies with: `pip install \"unstructured[md]\"` after install the requirements file. Leave this line commented out. \r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+# sarvesh requirements\r\n+pip install -U sentence-transformers\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731340338068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n \r\n \r\n \r\n # sarvesh requirements\r\n-pip install -U sentence-transformers\n\\ No newline at end of file\n+sentence-transformers\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731339281785,
+            "name": "Commit-0",
+            "content": "python-dotenv==1.0.1 # For reading environment variables stored in .env file\r\nlangchain==0.2.2\r\nlangchain-community==0.2.3\r\nlangchain-openai==0.1.8 # For embeddings\r\nunstructured==0.14.4 # Document loading\r\n# onnxruntime==1.17.1 # chromadb dependency: on Mac use `conda install onnxruntime -c conda-forge`\r\n# For Windows users, install Microsoft Visual C++ Build Tools first\r\n# install onnxruntime before installing `chromadb`\r\nchromadb==0.5.0 # Vector storage\r\nopenai==1.31.1 # For embeddings\r\ntiktoken==0.7.0  # For embeddings \r\n\r\n# install markdown depenendies with: `pip install \"unstructured[md]\"` after install the requirements file. Leave this line commented out. "
+        }
+    ]
+}
